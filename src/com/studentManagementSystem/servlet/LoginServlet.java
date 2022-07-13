@@ -5,11 +5,11 @@ import com.studentManagementSystem.service.loginService;
 import com.studentManagementSystem.service.loginServiceImpl;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 
 /**
  * @author ylz
@@ -30,7 +30,14 @@ public class LoginServlet extends HttpServlet {
 //        System.out.println("账户："+ u.getU_id()+"密码："+u.getU_pwd());
         //实现登录服务层的业务逻辑层
         loginService l = new loginServiceImpl();
-        User user = l.loginService(u);
+        User user = null;
+        try {
+            user = l.loginService(u);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         if(U_id.equals(user.getU_id())&&u_pwd.equals(user.getU_pwd())){
             req.setAttribute("user",user);
             //说明确有其值

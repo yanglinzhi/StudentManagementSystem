@@ -8,6 +8,9 @@ public class User {
     private int u_id;
     private String u_pwd;
     private String u_phone;
+    private int u_role;
+    private int isdelete;
+    private String u_name;
 
     public int getU_role() {
         return u_role;
@@ -16,10 +19,6 @@ public class User {
     public void setU_role(int u_role) {
         this.u_role = u_role;
     }
-
-    private int u_role;
-    private int isdelete;
-
     public String getU_name() {
         return u_name;
     }
@@ -28,7 +27,6 @@ public class User {
         this.u_name = u_name;
     }
 
-    private String u_name;
 
     public int getU_id() {
         return u_id;
