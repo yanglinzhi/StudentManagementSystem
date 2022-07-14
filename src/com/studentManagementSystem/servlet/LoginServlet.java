@@ -1,6 +1,8 @@
 package com.studentManagementSystem.servlet;
 
 import com.studentManagementSystem.bean.User;
+import com.studentManagementSystem.service.FileService;
+import com.studentManagementSystem.service.FileServiceImpl;
 import com.studentManagementSystem.service.loginService;
 import com.studentManagementSystem.service.loginServiceImpl;
 
@@ -10,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * @author ylz
@@ -38,12 +41,27 @@ public class LoginServlet extends HttpServlet {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+        /*
+        * 如果账户和密码一直跳转到mainPage.jsp
+        * 否则跳回登录页面
+        * */
         if(U_id.equals(user.getU_id())&&u_pwd.equals(user.getU_pwd())){
+            FileService fs = new FileServiceImpl();
+            ArrayList<User> arrUser = null;
+            try {
+                arrUser = fs.getAllStudents();
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
             req.setAttribute("user",user);
+            req.setAttribute("arrUser",arrUser);
             //说明确有其值
             req.getRequestDispatcher("mainPage.jsp").forward(req,resp);
         }else {
-
+            req.setAttribute("error","账户和密码不一致");
+            req.getRequestDispatcher("login.jsp").forward(req,resp);
         }
     }
 }

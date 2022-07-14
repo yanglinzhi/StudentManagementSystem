@@ -69,6 +69,18 @@ public class User {
         this.u_name = u_name;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "u_id=" + u_id +
+                ", u_pwd='" + u_pwd + '\'' +
+                ", u_phone='" + u_phone + '\'' +
+                ", u_role=" + u_role +
+                ", isdelete=" + isdelete +
+                ", u_name='" + u_name + '\'' +
+                '}';
+    }
+
     public User(){
 
     }

@@ -6,20 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="学生管理系统第一天">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/util/conntionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/util/jdbcTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.29.jar" afterDir="false" />
+    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="学生管理系统第二天01">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_spec_1_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDapImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/MainServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StudentManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentManagementSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/LoginDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/LoginDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/service/loginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/loginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/service/loginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/loginServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/mainPage.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -66,14 +68,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Program Files/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar",
+    "last_opened_file_path": "C:/Users/20258/Desktop/学生管理系统/StudentManagementSystem/web/WEB-INF/lib",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "vcs.Subversion.SSH"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\20258\Desktop\学生管理系统\StudentManagementSystem\web\WEB-INF\lib" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat 服务器.Tomcat 8.5.73">
     <configuration name="jdbcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.studentManagementSystem.util.jdbcTest" />
@@ -94,7 +101,7 @@
       <deployment>
         <artifact name="StudentManagementSystem:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/StudentManagementSystem_war_exploded" />
+            <option name="CONTEXT_PATH" value="/StudentManagementSystem" />
           </settings>
         </artifact>
       </deployment>
@@ -176,6 +183,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat 服务器.Tomcat 8.5.73" />
+      <item itemvalue="应用程序.jdbcTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.jdbcTest" />
@@ -197,7 +208,9 @@
       <updated>1657615176109</updated>
       <workItem from="1657615177820" duration="9678000" />
       <workItem from="1657677563997" duration="71000" />
-      <workItem from="1657682179915" duration="16969000" />
+      <workItem from="1657682179915" duration="17453000" />
+      <workItem from="1657781747764" duration="804000" />
+      <workItem from="1657782655578" duration="10571000" />
     </task>
     <task id="LOCAL-00001" summary="学生管理系统第一天">
       <created>1657630640337</created>
@@ -206,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657630640337</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="学生管理系统第二天01">
+      <created>1657705475720</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657705475720</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +258,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="学生管理系统第一天" />
-    <option name="LAST_COMMIT_MESSAGE" value="学生管理系统第一天" />
+    <MESSAGE value="学生管理系统第二天01" />
+    <option name="LAST_COMMIT_MESSAGE" value="学生管理系统第二天01" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

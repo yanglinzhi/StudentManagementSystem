@@ -52,10 +52,11 @@
 <body>
   <div id="frame">
     <div id="inner">
-      <form action="/StudentManagementSystem_war_exploded/login" method="post" onsubmit="return validation()">
+      <form action="/StudentManagementSystem/login" method="post" onsubmit="return validation()">
         用户id:<input type="text" id="u_id" name="u_id"><span id="error" style="color: red"></span><br>
         密码:<input type="password" id="u_pwd" name="u_pwd"><span id="error01" style="color: red"></span><br>
         <input type="submit" value="登录" id="btn01"><input type="reset" style="margin-left: 20px" id="btn02" value="重置">
+        <span id="error02" style="color: red">${error}</span>
       </form>
     </div>
   </div>
