@@ -6,7 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="day03" />
+    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="day03">
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/ShowDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/ShowDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/bean/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/ShowService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/ShowServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/ShowServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/mainPage.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,21 +55,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/20258/Desktop/学生管理系统/StudentManagementSystem/web/WEB-INF/lib",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Subversion.SSH"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/20258/Desktop/学生管理系统/StudentManagementSystem/web/WEB-INF/lib&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Subversion.SSH&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\20258\Desktop\学生管理系统\StudentManagementSystem\web\WEB-INF\lib" />
@@ -195,6 +205,7 @@
       <workItem from="1657682179915" duration="17453000" />
       <workItem from="1657781747764" duration="804000" />
       <workItem from="1657782655578" duration="10880000" />
+      <workItem from="1657880263379" duration="10237000" />
     </task>
     <task id="LOCAL-00001" summary="学生管理系统第一天">
       <created>1657630640337</created>
@@ -217,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657793734721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="day03">
+      <created>1657880289757</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657880289757</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -57,6 +57,9 @@
             * */
             window.location.href = "mainServlet?v="+v+"&id=${user.getU_id()}";
         }
+        function goShow(v){
+            window.location.href = "show?v="+v+"&id=${user.getU_id()}";
+        }
     </script>
 
 </head>
@@ -92,7 +95,7 @@
                 <td>${item.getU_id()}</td>
                 <td>${item.getU_name()}</td>
                 <td>${item.getU_phone()}</td>
-                <td><button style="color: chocolate">查看成绩</button></td>
+                <td><button style="color: chocolate" onclick="goShow(${item.getU_id()})">查看成绩</button></td>
                 <td><button style="color: chocolate">修改</button>
                     <button style="color: chocolate">删除</button>
                 </td>
