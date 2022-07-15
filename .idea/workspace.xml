@@ -6,23 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="学生管理系统第二天01">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_spec_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDapImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudentManagementSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/mainPage.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="day03" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,7 +194,7 @@
       <workItem from="1657677563997" duration="71000" />
       <workItem from="1657682179915" duration="17453000" />
       <workItem from="1657781747764" duration="804000" />
-      <workItem from="1657782655578" duration="10571000" />
+      <workItem from="1657782655578" duration="10880000" />
     </task>
     <task id="LOCAL-00001" summary="学生管理系统第一天">
       <created>1657630640337</created>
@@ -226,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657705475720</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="day03">
+      <created>1657793734721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657793734721</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +250,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="学生管理系统第一天" />
     <MESSAGE value="学生管理系统第二天01" />
-    <option name="LAST_COMMIT_MESSAGE" value="学生管理系统第二天01" />
+    <MESSAGE value="day03" />
+    <option name="LAST_COMMIT_MESSAGE" value="day03" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
