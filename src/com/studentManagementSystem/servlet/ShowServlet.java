@@ -34,14 +34,10 @@ public class ShowServlet extends HttpServlet {
         ShowService ss = new ShowServiceImpl();
         User adminU;
         User student;
+        ArrayList<Course> course;
         try {
             adminU = fs.getAdmin(UserId);
             student = fs.getAdmin(StudentId);
-        } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        ArrayList<Course> course;
-        try {
             course = ss.getScore(StudentId);
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);

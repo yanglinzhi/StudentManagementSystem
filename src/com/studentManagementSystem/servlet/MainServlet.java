@@ -61,6 +61,7 @@ public class MainServlet extends HttpServlet {
                 throw new RuntimeException(e);
             }
             req.setAttribute("arrUser", arr2);
+            req.setAttribute("message","none");
             req.getRequestDispatcher("mainPage.jsp").forward(req, resp);
         }
 

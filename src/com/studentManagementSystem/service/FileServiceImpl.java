@@ -36,5 +36,10 @@ public class FileServiceImpl implements FileService{
     public boolean updatePsw(String sId, String sName, String newPsw) throws SQLException, ClassNotFoundException {
         return fs.updatePsw(sId,sName,newPsw);
     }
+
+    @Override
+    public boolean deleteStu(String studentId) throws SQLException, ClassNotFoundException {
+        return fs.deleteStu(studentId);
+    }
 }
 

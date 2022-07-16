@@ -47,14 +47,14 @@
             padding:1px;
 
         }
+        #message{
+            display: none;
+        }
 
     </style>
     <script>
         function search() {
             let v = document.getElementById("fileid").value;
-            /*
-            * v 可能是id或名字等
-            * */
             window.location.href = "mainServlet?v="+v+"&id=${user.getU_id()}";
         }
         function goShow(v){
@@ -64,10 +64,19 @@
             window.location.href= "goUpdate?v="+v+"&id=${user.getU_id()}";
 
         }
+        function goDelete(v) {
+            window.location.href="goDelete?v="+v+"&id=${user.getU_id()}";
+        }
+        function deleteResult() {
+            let message = document.getElementById("message").value;
+            if(message!="none"){
+                alert(message)
+            }
+        }
     </script>
 
 </head>
-<body>
+<body onload="deleteResult()">
 
 <div id="head_">
     <div id="personFile">
@@ -101,7 +110,7 @@
                 <td>${item.getU_phone()}</td>
                 <td><button style="color: chocolate" onclick="goShow(${item.getU_id()})">查看成绩</button></td>
                 <td><button style="color: chocolate" onclick="goUpdate(${item.getU_id()})">修改</button>
-                    <button style="color: chocolate">删除</button>
+                    <button style="color: chocolate" onclick="goDelete(${item.getU_id()})">删除</button>
                 </td>
             </tr>
 
@@ -109,7 +118,7 @@
     </table>
 </div>
 
-
+<input id="message" value="${message}">
 <div>
 
 

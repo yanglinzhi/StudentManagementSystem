@@ -57,6 +57,7 @@ public class LoginServlet extends HttpServlet {
             }
             req.setAttribute("user",user);
             req.setAttribute("arrUser",arrUser);
+            req.setAttribute("message","none");
             //说明确有其值
             req.getRequestDispatcher("mainPage.jsp").forward(req,resp);
         }else {

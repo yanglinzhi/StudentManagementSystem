@@ -15,27 +15,32 @@ import java.util.ArrayList;
 
 /**
  * @author ylz
- * @date 2022/7/16 8:16
+ * @date 2022/7/16 20:13
  */
-@WebServlet("/goBack")
-public class GoBackServlet extends HttpServlet {
+@WebServlet("/goDelete")
+public class DeleteServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setCharacterEncoding("utf-8");
-        String id = req.getParameter("id");
+        String userId = req.getParameter("id");
+        String studentId = req.getParameter("v");
         FileService fs = new FileServiceImpl();
-        ArrayList<User> arrUser = null;
-        User user = null;
+        boolean f = false;
+        User user;
+        ArrayList<User> u;
         try {
-            user=fs.getAdmin(id);
-            arrUser = fs.getAllStudents();
+            f = fs.deleteStu(studentId);
+            user = fs.getAdmin(userId);
+            u = fs.getAllStudents();
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
-        req.setAttribute("user",user);
-        req.setAttribute("arrUser",arrUser);
-        req.setAttribute("message","none");
-        //说明确有其值
+        req.setAttribute("arrUser",u);
+        req.setAttribute("user", user);
+        if (f){
+            req.setAttribute("message","删除成功");
+        }else{
+            req.setAttribute("message","删除失败");
+        }
         req.getRequestDispatcher("mainPage.jsp").forward(req,resp);
     }
 }

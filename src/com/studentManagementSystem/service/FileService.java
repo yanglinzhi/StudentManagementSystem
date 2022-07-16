@@ -17,4 +17,6 @@ public interface FileService {
     User getAdmin(String id) throws SQLException, ClassNotFoundException;
 
     boolean updatePsw(String sId, String sName, String newPsw) throws SQLException, ClassNotFoundException;
+
+    boolean deleteStu(String studentId) throws SQLException, ClassNotFoundException;
 }

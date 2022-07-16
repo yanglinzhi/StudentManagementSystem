@@ -34,31 +34,23 @@ public class UpdateServlet extends HttpServlet {
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+        req.setAttribute("user",U);
+        req.setAttribute("student",S);
         if (S.getU_pwd().equals(oldPsw)){
             boolean s;
             try {
                 s = fs.updatePsw(sId,sName,newPsw);
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            } catch (ClassNotFoundException e) {
+            } catch (SQLException | ClassNotFoundException e) {
                 throw new RuntimeException(e);
             }
             if(s){
-                req.setAttribute("user",U);
-                req.setAttribute("student",S);
                 req.setAttribute("message","修改成功");
-                req.getRequestDispatcher("update.jsp").forward(req,resp);
             }else{
-                req.setAttribute("user",U);
-                req.setAttribute("student",S);
                 req.setAttribute("message","修改失败");
-                req.getRequestDispatcher("update.jsp").forward(req,resp);
             }
         }else{
-            req.setAttribute("user",U);
-            req.setAttribute("student",S);
             req.setAttribute("message","原密码不正确");
-            req.getRequestDispatcher("update.jsp").forward(req,resp);
         }
+        req.getRequestDispatcher("update.jsp").forward(req,resp);
     }
 }

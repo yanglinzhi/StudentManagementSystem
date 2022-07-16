@@ -18,4 +18,6 @@ public interface FileDao {
 
 
     boolean updatePsw(String sId, String sName, String newPsw) throws SQLException, ClassNotFoundException;
+
+    boolean deleteStu(String studentId) throws SQLException, ClassNotFoundException;
 }

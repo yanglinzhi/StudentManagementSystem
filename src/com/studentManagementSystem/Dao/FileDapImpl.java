@@ -97,4 +97,19 @@ public class FileDapImpl implements FileDao{
             return false;
         }
     }
+
+    @Override
+    public boolean deleteStu(String studentId) throws SQLException, ClassNotFoundException {
+        String sql = "UPDATE user SET u_isdelete=1 WHERE u_id="+studentId;
+        String url = "jdbc:mysql://127.0.0.1:3306/studenttest";
+        String username = "root";
+        String password = "root";
+        conntionFactory cF = new conntionFactory(url,username,password);
+        int rs= cF.dbUpdate(sql);
+        if (rs == 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
