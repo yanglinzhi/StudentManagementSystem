@@ -31,5 +31,10 @@ public class FileServiceImpl implements FileService{
     public User getAdmin(String id) throws SQLException, ClassNotFoundException {
         return fs.getAdmin(id);
     }
+
+    @Override
+    public boolean updatePsw(String sId, String sName, String newPsw) throws SQLException, ClassNotFoundException {
+        return fs.updatePsw(sId,sName,newPsw);
+    }
 }
 

@@ -15,4 +15,7 @@ public interface FileDao {
     User getFileByNameOrId(String v) throws SQLException, ClassNotFoundException;
 
     User getAdmin(String id) throws SQLException, ClassNotFoundException;
+
+
+    boolean updatePsw(String sId, String sName, String newPsw) throws SQLException, ClassNotFoundException;
 }

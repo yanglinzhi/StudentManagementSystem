@@ -60,6 +60,10 @@
         function goShow(v){
             window.location.href = "show?v="+v+"&id=${user.getU_id()}";
         }
+        function goUpdate(v) {
+            window.location.href= "goUpdate?v="+v+"&id=${user.getU_id()}";
+
+        }
     </script>
 
 </head>
@@ -96,7 +100,7 @@
                 <td>${item.getU_name()}</td>
                 <td>${item.getU_phone()}</td>
                 <td><button style="color: chocolate" onclick="goShow(${item.getU_id()})">查看成绩</button></td>
-                <td><button style="color: chocolate">修改</button>
+                <td><button style="color: chocolate" onclick="goUpdate(${item.getU_id()})">修改</button>
                     <button style="color: chocolate">删除</button>
                 </td>
             </tr>

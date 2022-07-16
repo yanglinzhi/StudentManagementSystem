@@ -33,6 +33,11 @@
             padding: 1px;
         }
     </style>
+    <script>
+        function goBack(id) {
+            window.location.href="goBack?id="+id;
+        }
+    </script>
 </head>
 <body>
 <div id="head_">
@@ -51,6 +56,7 @@
             <td>课程名字</td>
             <td>课程教师</td>
             <td>成绩</td>
+            <td>操作</td>
         </tr>
         <c:forEach items="${arrStudent}" var="item">
             <tr>
@@ -58,10 +64,11 @@
                 <td>${item.getCourseName()}</td>
                 <td>${item.getCourseTeacherName()}</td>
                 <td>${item.getCourseScore()}</td>
+                <td><button>修改成绩</button></td>
             </tr>
         </c:forEach>
     </table>
-    <button>返回</button>
+    <button onclick="goBack(${user.getU_id()})">返回</button>
 </div>
 </body>
 </html>

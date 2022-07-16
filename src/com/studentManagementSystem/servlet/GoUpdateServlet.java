@@ -18,15 +18,12 @@ import java.util.ArrayList;
 
 /**
  * @author ylz
- * @date 2022/7/15 20:11
+ * @date 2022/7/16 8:42
  */
-@WebServlet("/show")
-public class ShowServlet extends HttpServlet {
+@WebServlet("/goUpdate")
+public class GoUpdateServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        /*
-         * 查看个人成绩
-         * */
         req.setCharacterEncoding("utf-8");
         String UserId = req.getParameter("id");
         String StudentId = req.getParameter("v");
@@ -48,7 +45,7 @@ public class ShowServlet extends HttpServlet {
         }
         req.setAttribute("user", adminU);
         req.setAttribute("student", student);
-        req.setAttribute("arrStudent", course);
-        req.getRequestDispatcher("score.jsp").forward(req, resp);
+        req.setAttribute("message","none");
+        req.getRequestDispatcher("update.jsp").forward(req, resp);
     }
 }

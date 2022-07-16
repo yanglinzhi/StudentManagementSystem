@@ -77,8 +77,24 @@ public class FileDapImpl implements FileDao{
             User user = new User();
             user.setU_id(rs.getInt("u_id"));
             user.setU_name(rs.getString("u_name"));
+            user.setU_pwd(rs.getString("u_pwd"));
             return user;
         }
         return null;
+    }
+
+    @Override
+    public boolean updatePsw(String sId, String sName, String newPsw) throws SQLException, ClassNotFoundException {
+        String sql = "UPDATE user SET u_pwd="+newPsw+" WHERE u_id="+sId+" AND u_name="+sName;
+        String url = "jdbc:mysql://127.0.0.1:3306/studenttest";
+        String username = "root";
+        String password = "root";
+        conntionFactory cF = new conntionFactory(url,username,password);
+        int rs= cF.dbUpdate(sql);
+        if (rs == 1){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
