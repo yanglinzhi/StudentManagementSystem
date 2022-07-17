@@ -6,21 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="day05-1">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/DeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDapImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/Dao/FileDapImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/service/FileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/GoBackServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/GoBackServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/ShowServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/ShowServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/UpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/studentManagementSystem/servlet/UpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/mainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/mainPage.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="877e3d7f-f6e5-437b-b24b-38c84c7185a8" name="变更" comment="day05-2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +197,7 @@
       <workItem from="1657880263379" duration="10981000" />
       <workItem from="1657929254467" duration="495000" />
       <workItem from="1657929853256" duration="11562000" />
-      <workItem from="1657973248229" duration="2522000" />
+      <workItem from="1657973248229" duration="2547000" />
     </task>
     <task id="LOCAL-00001" summary="学生管理系统第一天">
       <created>1657630640337</created>
@@ -269,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657973335365</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="day05-2">
+      <created>1657975805548</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657975805548</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +298,8 @@
     <MESSAGE value="day03" />
     <MESSAGE value="day04" />
     <MESSAGE value="day05-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="day05-1" />
+    <MESSAGE value="day05-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="day05-2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
